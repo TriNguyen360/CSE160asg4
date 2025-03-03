@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p>
+
+    <p id="performance"> XXX </p>
+    <label for="cameraAngle">Camera Angle:</label>
+    <input type="range" id="cameraAngle" min="0" max="360" value="0">
+    <button onclick="toggleNormalDebug()">Toggle Normal Debug</button>
+    <button onclick="toggleLightAnimation()">Toggle Light Animation</button>
+
+
+    <p>
+      Light X <input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideX">
+      Light Y <input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideY">
+      Light Z <input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideZ">
+    </p>
+
+
+    
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="camera.js"></script>
+    <script src="BlockyAnimal.js"></script>
+    <script src="sphere.js"></script>
+  </body>
+</html>
